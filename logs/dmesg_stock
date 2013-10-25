@@ -1,0 +1,744 @@
+<6>[    0.000000] Initializing cgroup subsys cpu
+<5>[    0.000000] Linux version 3.0.36+ (root@lzj-desktop) (gcc version 4.6.x-google 20120106 (prerelease) (GCC) ) #29 SMP PREEMPT Wed Aug 14 10:31:31 CST 2013
+<4>[    0.000000] CPU: ARMv7 Processor [413fc090] revision 0 (ARMv7), cr=10c5387d
+<4>[    0.000000] CPU: VIPT nonaliasing data cache, VIPT aliasing instruction cache
+<4>[    0.000000] Machine: RK30board
+<6>[    0.000000] memory reserve: Memory(base:0x91800000 size:80M) reserved for <ion>
+<6>[    0.000000] memory reserve: Memory(base:0x90c00000 size:12M) reserved for <fb0 buf>
+<6>[    0.000000] memory reserve: Memory(base:0x90400000 size:8M) reserved for <camera_ipp_mem>
+<6>[    0.000000] memory reserve: Total reserved 100M
+<4>[    0.000000] Memory policy: ECC disabled, Data cache writeback
+<6>[    0.000000] bootconsole [earlycon0] enabled
+<4>[    0.000000] CPU SRAM: copied sram code from c0c3d000 to fef00100 - fef02090
+<4>[    0.000000] CPU SRAM: copied sram data from c0c3ef90 to fef02090 - fef0280c
+<4>[    0.000000] sram_log:      4q ?&     :     4q ?)     !?, # 0q    *!  ! 3q   @      3q 
+<4>[    0.000000] CLKDATA_MSG: pll_flag = 0x00
+<6>[    0.000000] L310 cache controller enabled
+<6>[    0.000000] l2x0: 16 ways, CACHE_ID 0x4100c0c8, AUX_CTRL 0x76050001, Cache size: 524288 B
+<4>[    0.000000] DDR DEBUG: version 1.00 20130510 
+<4>[    0.000000] DDR DEBUG: DDR3 Device
+<4>[    0.000000] DDR DEBUG: Bus Width=32 Col=10 Bank=8 Row=16 CS=1 Total Capability=2048MB
+<4>[    0.000000] DDR DEBUG: init success!!! freq=300MHz
+<4>[    0.000000] DDR DEBUG: DTONE=0x1, DTERR=0x0, DTIERR=0x0, DTPASS=0x4, DGSL=0 extra clock, DGPS=360
+<4>[    0.000000] DDR DEBUG: DTONE=0x1, DTERR=0x0, DTIERR=0x0, DTPASS=0x4, DGSL=0 extra clock, DGPS=360
+<4>[    0.000000] DDR DEBUG: DTONE=0x1, DTERR=0x0, DTIERR=0x0, DTPASS=0x3, DGSL=1 extra clock, DGPS=90
+<4>[    0.000000] DDR DEBUG: DTONE=0x1, DTERR=0x0, DTIERR=0x0, DTPASS=0x3, DGSL=1 extra clock, DGPS=90
+<4>[    0.000000] DDR DEBUG: ZERR=0, ZDONE=0, ZPD=0x0, ZPU=0x0, OPD=0x0, OPU=0x0
+<4>[    0.000000] DDR DEBUG: DRV Pull-Up=0xb, DRV Pull-Dwn=0xb
+<4>[    0.000000] DDR DEBUG: ODT Pull-Up=0x2, ODT Pull-Dwn=0x2
+<4>[    0.000000] Boot mode: REBOOT (6) flag: NORMAL (0xc3524200)
+<7>[    0.000000] On node 0 totalpages: 498688
+<7>[    0.000000] free_area_init_node: node 0, pgdat c0c3aa80, node_mem_map c2130000
+<7>[    0.000000]   Normal zone: 1744 pages used for memmap
+<7>[    0.000000]   Normal zone: 0 pages reserved
+<7>[    0.000000]   Normal zone: 195888 pages, LIFO batch:31
+<7>[    0.000000]   HighMem zone: 2352 pages used for memmap
+<7>[    0.000000]   HighMem zone: 298704 pages, LIFO batch:31
+<6>[    0.000000] PERCPU: Embedded 7 pages/cpu @c313f000 s6976 r8192 d13504 u32768
+<7>[    0.000000] pcpu-alloc: s6976 r8192 d13504 u32768 alloc=8*4096
+<7>[    0.000000] pcpu-alloc: [0] 0 [0] 1 [0] 2 [0] 3 
+<4>[    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 494592
+<5>[    0.000000] Kernel command line: console=ttyFIQ0 androidboot.console=ttyFIQ0 init=/init initrd=0x62000000,0x00130000 mtdparts=rk29xxnand:0x00002000@0x00002000(misc),0x00006000@0x00004000(kernel),0x00008000@0x0000a000(boot),0x00010000@0x00012000(recovery),0x00020000@0x00022000(backup),0x00040000@0x00042000(cache),0x00800000@0x00082000(userdata),0x00002000@0x00882000(kpanic),0x0012a000@0x00884000(system),-@0x009ae000(user) bootver=2013-06-21#1.24 firmware_ver=4.2.2
+<6>[    0.000000] PID hash table entries: 4096 (order: 2, 16384 bytes)
+<6>[    0.000000] Dentry cache hash table entries: 131072 (order: 7, 524288 bytes)
+<6>[    0.000000] Inode-cache hash table entries: 65536 (order: 6, 262144 bytes)
+<6>[    0.000000] Memory: 772MB 1176MB = 1948MB total
+<5>[    0.000000] Memory: 1956816k/1956816k available, 140336k reserved, 1204224K highmem
+<5>[    0.000000] Virtual kernel memory layout:
+<5>[    0.000000]     vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+<5>[    0.000000]     fixmap  : 0xfff00000 - 0xfffe0000   ( 896 kB)
+<5>[    0.000000]     DMA     : 0xff600000 - 0xffe00000   (   8 MB)
+<5>[    0.000000]     vmalloc : 0xf7000000 - 0xfe800000   ( 120 MB)
+<5>[    0.000000]     lowmem  : 0xc0000000 - 0xf6800000   ( 872 MB)
+<5>[    0.000000]     pkmap   : 0xbfe00000 - 0xc0000000   (   2 MB)
+<5>[    0.000000]     modules : 0xbf000000 - 0xbfe00000   (  14 MB)
+<5>[    0.000000]       .init : 0xc0408000 - 0xc052c000   (1168 kB)
+<5>[    0.000000]       .text : 0xc052c000 - 0xc0bc2774   (6746 kB)
+<5>[    0.000000]       .data : 0xc0bc4000 - 0xc0c3c8e8   ( 483 kB)
+<5>[    0.000000]        .bss : 0xc0c40024 - 0xc16e7000   (10908 kB)
+<6>[    0.000000] SLUB: Genslabs=13, HWalign=32, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+<6>[    0.000000] Preemptible hierarchical RCU implementation.
+<6>[    0.000000] NR_IRQS:352
+<4>[    0.000000] rk30_gpio_init: 128 gpio irqs in 4 banks
+<6>[    0.000000] sched_clock: 32 bits at 24MHz, resolution 41ns, wraps every 178956ms
+<4>[    0.000000] rk_timer: version 1.2
+<6>[    0.003755] Calibrating delay loop (skipped) preset value.. 1631.46 BogoMIPS (lpj=8157341)
+<6>[    0.012924] pid_max: default: 32768 minimum: 301
+<6>[    0.018250] Mount-cache hash table entries: 512
+<6>[    0.023804] Initializing cgroup subsys debug
+<6>[    0.028583] Initializing cgroup subsys cpuacct
+<6>[    0.033573] Initializing cgroup subsys freezer
+<6>[    0.038558] CPU: Testing write buffer coherency: ok
+<4>[    0.124813] CPU1: Booted secondary processor
+<4>[    0.164805] CPU2: Booted secondary processor
+<4>[    0.204801] CPU3: Booted secondary processor
+<6>[    0.204839] Brought up 4 CPUs
+<6>[    0.222502] SMP: Total of 4 processors activated (6525.87 BogoMIPS).
+<6>[    0.229883] devtmpfs: initialized
+<6>[    0.239607] NET: Registered protocol family 16
+<6>[    0.244683] last_log: 0xefd00000 map to 0xf7004000 and copy to 0xc0c441a0 (version 2.1)
+<6>[    0.268511] lcdc0 is used as external display device contoller!
+<6>[    0.275152] lcdc1 is used as primary display device controller!
+<6>[    0.382007] rk29sdk_wifi_bt_gpio_control_init: init finished
+<6>[    0.389605] console [ttyFIQ0] enabled, bootconsole disabled
+<6>[    0.398742] Registered FIQ tty driver efc35cc0
+<6>[    0.409690] bio: create slab <bio-0> at 0
+<5>[    0.414106] SCSI subsystem initialized
+<6>[    0.414337] usbcore: registered new interface driver usbfs
+<6>[    0.414455] usbcore: registered new interface driver hub
+<6>[    0.428680] usbcore: registered new device driver usb
+<6>[    0.429109] rk30_i2c rk30_i2c.0: i2c-0: RK30 I2C adapter
+<6>[    0.429343] rk30_i2c rk30_i2c.1: i2c-1: RK30 I2C adapter
+<6>[    0.429678] rk30_i2c rk30_i2c.2: i2c-2: RK30 I2C adapter
+<6>[    0.429810] rk30_i2c rk30_i2c.3: i2c-3: RK30 I2C adapter
+<6>[    0.430033] rk30_i2c rk30_i2c.4: i2c-4: RK30 I2C adapter
+<6>[    0.460264] rk30-adc rk30-adc: rk30 adc: driver initialized
+<4>[    0.581537] regbase f7100000 0x0, otg_phy_confed08114, 0xda8
+<6>[    0.631710] rk30_adc_battery: driver initialized
+<6>[    0.631986] Advanced Linux Sound Architecture Driver Version 1.0.24.
+<6>[    0.632418] Bluetooth: Core ver 2.16
+<6>[    0.632485] NET: Registered protocol family 31
+<6>[    0.632520] Bluetooth: HCI device and connection manager initialized
+<6>[    0.632569] Bluetooth: HCI socket layer initialized
+<6>[    0.632606] Bluetooth: L2CAP socket layer initialized
+<6>[    0.632656] Bluetooth: SCO socket layer initialized
+<6>[    0.632878] cfg80211: Calling CRDA to update world regulatory domain
+<4>[    0.678240] rk fb probe ok!
+<4>[    0.683066] act8846_set_init,line=17
+<4>[    0.683100] act8846_set_init:g_pmic_type=3
+<4>[    0.684892] act8846_set_init  act_dcdc1 =1200000mV end
+<4>[    0.686766] act8846_set_init  vdd_core =1000000mV end
+<4>[    0.688641] act8846_set_init  vdd_cpu =1000000mV end
+<4>[    0.690512] act8846_set_init  act_dcdc4 =3000000mV end
+<4>[    0.691751] act8846_set_init  act_ldo1 =1000000mV end
+<4>[    0.692888] act8846_set_init  act_ldo2 =1200000mV end
+<4>[    0.694662] act8846_set_init  act_ldo3 =1800000mV end
+<4>[    0.695800] act8846_set_init  act_ldo4 =3300000mV end
+<4>[    0.696937] act8846_set_init  act_ldo5 =3300000mV end
+<4>[    0.698074] act8846_set_init  act_ldo6 =3300000mV end
+<4>[    0.699212] act8846_set_init  act_ldo7 =1800000mV end
+<4>[    0.700983] act8846_set_init  act_ldo8 =2800000mV end
+<4>[    0.701029] act8846_set_init,line=78 END
+<4>[    0.701096] i2c-core: driver [act8846] using legacy suspend method
+<4>[    0.701140] i2c-core: driver [act8846] using legacy resume method
+<6>[    1.044214] Switching to clocksource rk_timer
+<6>[    1.044841] Switched to NOHz mode on CPU #3
+<6>[    1.044855] Switched to NOHz mode on CPU #2
+<6>[    1.044867] Switched to NOHz mode on CPU #1
+<4>[    1.051228] lcdc1:reg_phy_base = 0x1010e000,reg_vir_base:0xf70a0000
+<4>[    1.051318] fb0:win0
+<4>[    1.051324] fb1:win1
+<4>[    1.051329] fb2:win2
+<4>[    1.051463] rk3188 lcdc1 clk enable...
+<6>[    1.054187] Switched to NOHz mode on CPU #0
+<4>[    1.099395] rk3188 lcdc1 clk disable...
+<4>[    1.124204] fb0:phy:90c00000>>vir:f8000000>>len:0xc00000
+<4>[    1.124484] rk_fb_register>>>>>fb0
+<4>[    1.133115] rk_fb_register>>>>>fb1
+<4>[    1.133214] rk3188 lcdc1 clk enable...
+<4>[    1.133255] lcdc1: dclk:64000000>>fps:54 
+<6>[    1.133288] rk30-lcdc rk30-lcdc.1: rk3188_load_screen for lcdc1 ok!
+<6>[    1.158379] lcdc1 wakeup from standby!
+<6>[    1.158412] lcdc1 win0 open,atv layer:1
+<4>[    1.174029] rk3188 lcdc1 probe ok!
+<4>[    1.174127] lcdc0:reg_phy_base = 0x1010c000,reg_vir_base:0xf70a4000
+<4>[    1.174199] fb0:win0
+<4>[    1.174204] fb1:win1
+<4>[    1.174209] fb2:win2
+<4>[    1.174321] rk3188 lcdc0 clk enable...
+<4>[    1.199385] rk3188 lcdc0 clk disable...
+<4>[    1.199425] fb2:phy:90c00000>>vir:f8000000>>len:0xc00000
+<4>[    1.199677] rk_fb_register>>>>>fb2
+<4>[    1.212101] rk_fb_register>>>>>fb3
+<4>[    1.212133] rk3188 lcdc0 probe ok!
+<6>[    1.219029] NET: Registered protocol family 2
+<6>[    1.219170] IP route cache hash table entries: 32768 (order: 5, 131072 bytes)
+<6>[    1.219554] TCP established hash table entries: 131072 (order: 8, 1048576 bytes)
+<6>[    1.221432] TCP bind hash table entries: 65536 (order: 7, 786432 bytes)
+<6>[    1.222536] TCP: Hash tables configured (established 131072 bind 65536)
+<6>[    1.222585] TCP reno registered
+<6>[    1.222614] UDP hash table entries: 512 (order: 2, 16384 bytes)
+<6>[    1.222686] UDP-Lite hash table entries: 512 (order: 2, 16384 bytes)
+<6>[    1.223004] NET: Registered protocol family 1
+<4>[    1.223098] lcd select gpio error
+<4>[    1.223127] ------------[ cut here ]------------
+<4>[    1.223175] WARNING: at drivers/gpio/gpiolib.c:101 gpio_ensure_requested+0x54/0x1b0()
+<4>[    1.223232] autorequest GPIO-203
+<4>[    1.223283] [<c05373b0>] (unwind_backtrace+0x0/0xf8) from [<c0568700>] (warn_slowpath_common+0x4c/0x64)
+<4>[    1.223358] [<c0568700>] (warn_slowpath_common+0x4c/0x64) from [<c05687ac>] (warn_slowpath_fmt+0x30/0x40)
+<4>[    1.223433] [<c05687ac>] (warn_slowpath_fmt+0x30/0x40) from [<c0702188>] (gpio_ensure_requested+0x54/0x1b0)
+<4>[    1.223509] [<c0702188>] (gpio_ensure_requested+0x54/0x1b0) from [<c0702780>] (gpio_direction_input+0x90/0x190)
+<4>[    1.223589] [<c0702780>] (gpio_direction_input+0x90/0x190) from [<c070bbe0>] (Lcd_Select+0x28/0x54)
+<4>[    1.223662] [<c070bbe0>] (Lcd_Select+0x28/0x54) from [<c070bc40>] (rk29_backlight_probe+0x34/0x290)
+<4>[    1.223737] [<c070bc40>] (rk29_backlight_probe+0x34/0x290) from [<c0739774>] (platform_drv_probe+0x18/0x1c)
+<4>[    1.223816] [<c0739774>] (platform_drv_probe+0x18/0x1c) from [<c073855c>] (driver_probe_device+0x90/0x1ac)
+<4>[    1.223890] [<c073855c>] (driver_probe_device+0x90/0x1ac) from [<c0738704>] (__driver_attach+0x8c/0x90)
+<4>[    1.223963] [<c0738704>] (__driver_attach+0x8c/0x90) from [<c0737768>] (bus_for_each_dev+0x5c/0x88)
+<4>[    1.224033] [<c0737768>] (bus_for_each_dev+0x5c/0x88) from [<c0737f34>] (bus_add_driver+0x180/0x254)
+<4>[    1.224105] [<c0737f34>] (bus_add_driver+0x180/0x254) from [<c0738bb0>] (driver_register+0x78/0x13c)
+<4>[    1.224180] [<c0738bb0>] (driver_register+0x78/0x13c) from [<c0419f24>] (rk29_backlight_init+0xc/0x18)
+<4>[    1.224259] [<c0419f24>] (rk29_backlight_init+0xc/0x18) from [<c052c6e8>] (do_one_initcall+0xfc/0x164)
+<4>[    1.224338] [<c052c6e8>] (do_one_initcall+0xfc/0x164) from [<c040893c>] (kernel_init+0x98/0x13c)
+<4>[    1.224411] [<c040893c>] (kernel_init+0x98/0x13c) from [<c0532a08>] (kernel_thread_exit+0x0/0x8)
+<4>[    1.224486] ---[ end trace e16871fa5164152c ]---
+<4>[    1.224543] 111111111111111
+<4>[    1.224549] 
+<4>[    1.224579] lcd select gpio error
+<4>[    1.224604] ------------[ cut here ]------------
+<4>[    1.224644] WARNING: at drivers/gpio/gpiolib.c:101 gpio_ensure_requested+0x54/0x1b0()
+<4>[    1.224700] autorequest GPIO-203
+<4>[    1.224738] [<c05373b0>] (unwind_backtrace+0x0/0xf8) from [<c0568700>] (warn_slowpath_common+0x4c/0x64)
+<4>[    1.224810] [<c0568700>] (warn_slowpath_common+0x4c/0x64) from [<c05687ac>] (warn_slowpath_fmt+0x30/0x40)
+<4>[    1.224883] [<c05687ac>] (warn_slowpath_fmt+0x30/0x40) from [<c0702188>] (gpio_ensure_requested+0x54/0x1b0)
+<4>[    1.224958] [<c0702188>] (gpio_ensure_requested+0x54/0x1b0) from [<c0702780>] (gpio_direction_input+0x90/0x190)
+<4>[    1.225037] [<c0702780>] (gpio_direction_input+0x90/0x190) from [<c070bbe0>] (Lcd_Select+0x28/0x54)
+<4>[    1.225108] [<c070bbe0>] (Lcd_Select+0x28/0x54) from [<c070bc5c>] (rk29_backlight_probe+0x50/0x290)
+<4>[    1.225181] [<c070bc5c>] (rk29_backlight_probe+0x50/0x290) from [<c0739774>] (platform_drv_probe+0x18/0x1c)
+<4>[    1.225256] [<c0739774>] (platform_drv_probe+0x18/0x1c) from [<c073855c>] (driver_probe_device+0x90/0x1ac)
+<4>[    1.225330] [<c073855c>] (driver_probe_device+0x90/0x1ac) from [<c0738704>] (__driver_attach+0x8c/0x90)
+<4>[    1.225401] [<c0738704>] (__driver_attach+0x8c/0x90) from [<c0737768>] (bus_for_each_dev+0x5c/0x88)
+<4>[    1.225469] [<c0737768>] (bus_for_each_dev+0x5c/0x88) from [<c0737f34>] (bus_add_driver+0x180/0x254)
+<4>[    1.225538] [<c0737f34>] (bus_add_driver+0x180/0x254) from [<c0738bb0>] (driver_register+0x78/0x13c)
+<4>[    1.225611] [<c0738bb0>] (driver_register+0x78/0x13c) from [<c0419f24>] (rk29_backlight_init+0xc/0x18)
+<4>[    1.225684] [<c0419f24>] (rk29_backlight_init+0xc/0x18) from [<c052c6e8>] (do_one_initcall+0xfc/0x164)
+<4>[    1.225755] [<c052c6e8>] (do_one_initcall+0xfc/0x164) from [<c040893c>] (kernel_init+0x98/0x13c)
+<4>[    1.225821] [<c040893c>] (kernel_init+0x98/0x13c) from [<c0532a08>] (kernel_thread_exit+0x0/0x8)
+<4>[    1.225884] ---[ end trace e16871fa5164152d ]---
+<4>[    1.225950] lcd select gpio error
+<4>[    1.225977] ------------[ cut here ]------------
+<4>[    1.226016] WARNING: at drivers/gpio/gpiolib.c:101 gpio_ensure_requested+0x54/0x1b0()
+<4>[    1.226070] autorequest GPIO-203
+<4>[    1.226106] [<c05373b0>] (unwind_backtrace+0x0/0xf8) from [<c0568700>] (warn_slowpath_common+0x4c/0x64)
+<4>[    1.226179] [<c0568700>] (warn_slowpath_common+0x4c/0x64) from [<c05687ac>] (warn_slowpath_fmt+0x30/0x40)
+<4>[    1.226254] [<c05687ac>] (warn_slowpath_fmt+0x30/0x40) from [<c0702188>] (gpio_ensure_requested+0x54/0x1b0)
+<4>[    1.226328] [<c0702188>] (gpio_ensure_requested+0x54/0x1b0) from [<c0702780>] (gpio_direction_input+0x90/0x190)
+<4>[    1.226407] [<c0702780>] (gpio_direction_input+0x90/0x190) from [<c070bbe0>] (Lcd_Select+0x28/0x54)
+<4>[    1.226478] [<c070bbe0>] (Lcd_Select+0x28/0x54) from [<c070bc68>] (rk29_backlight_probe+0x5c/0x290)
+<4>[    1.226551] [<c070bc68>] (rk29_backlight_probe+0x5c/0x290) from [<c0739774>] (platform_drv_probe+0x18/0x1c)
+<4>[    1.226625] [<c0739774>] (platform_drv_probe+0x18/0x1c) from [<c073855c>] (driver_probe_device+0x90/0x1ac)
+<4>[    1.226698] [<c073855c>] (driver_probe_device+0x90/0x1ac) from [<c0738704>] (__driver_attach+0x8c/0x90)
+<4>[    1.226770] [<c0738704>] (__driver_attach+0x8c/0x90) from [<c0737768>] (bus_for_each_dev+0x5c/0x88)
+<4>[    1.226842] [<c0737768>] (bus_for_each_dev+0x5c/0x88) from [<c0737f34>] (bus_add_driver+0x180/0x254)
+<4>[    1.226913] [<c0737f34>] (bus_add_driver+0x180/0x254) from [<c0738bb0>] (driver_register+0x78/0x13c)
+<4>[    1.226986] [<c0738bb0>] (driver_register+0x78/0x13c) from [<c0419f24>] (rk29_backlight_init+0xc/0x18)
+<4>[    1.227060] [<c0419f24>] (rk29_backlight_init+0xc/0x18) from [<c052c6e8>] (do_one_initcall+0xfc/0x164)
+<4>[    1.227133] [<c052c6e8>] (do_one_initcall+0xfc/0x164) from [<c040893c>] (kernel_init+0x98/0x13c)
+<4>[    1.227202] [<c040893c>] (kernel_init+0x98/0x13c) from [<c0532a08>] (kernel_thread_exit+0x0/0x8)
+<4>[    1.227265] ---[ end trace e16871fa5164152e ]---
+<4>[    1.227427] RK29 Backlight Driver Initialized.
+<6>[    1.227634] Unpacking initramfs...
+<6>[    1.284813] Freeing initrd memory: 1216K
+<6>[    1.284918] PMU: registered new PMU device of type 0
+<4>[    1.285036] DVFS MSG: core: dvfs_adjust_table_lmtvolt get leakage_level = 0
+<4>[    1.285092] Get nandc rate = 96000 KHz
+<4>[    1.285123] This chip no leakage msg, use delayline instead, val = 0.(HDL=193, LDL=193)
+<4>[    1.285178] Delayline TOO LOW, high voltage request
+<4>[    1.285216] DVFS MSG: aclk_gpu: dvfs_adjust_table_lmtvolt get leakage_level = 0
+<4>[    1.285273] Get nandc rate = 96000 KHz
+<4>[    1.285303] This chip no leakage msg, use delayline instead, val = 0.(HDL=193, LDL=193)
+<4>[    1.285357] Delayline TOO LOW, high voltage request
+<4>[    1.614610] rk3188 cpufreq version 2.1, suspend freq 816 MHz
+<6>[    1.615311] Loaded driver for PL330 DMAC-1 rk29-pl330
+<6>[    1.615354] 	DBUFF-32x8bytes Num_Chans-6 Num_Peri-12 Num_Events-12
+<6>[    1.615549] Loaded driver for PL330 DMAC-2 rk29-pl330
+<6>[    1.615590] 	DBUFF-64x8bytes Num_Chans-7 Num_Peri-20 Num_Events-14
+<4>[    1.883405] highmem bounce pool size: 64 pages
+<6>[    1.883516] ashmem: initialized
+<6>[    1.891766] fuse init (API version 7.16)
+<6>[    1.896262] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 252)
+<6>[    1.896307] io scheduler noop registered
+<6>[    1.896340] io scheduler deadline registered
+<6>[    1.896388] io scheduler cfq registered (default)
+<6>[    1.916622] rga: Driver loaded succesfully
+<4>[    1.916764] rk_serial.c v1.4 2013-04-16
+<6>[    1.917006] rk_serial rk_serial.0: dma_rx_buffer 0xffdfc000
+<6>[    1.917038] rk_serial rk_serial.0: dma_rx_phy 0x8ecfa000
+<6>[    1.917072] rk_serial rk_serial.0: serial_rk_init_dma_rx sucess
+<6>[    1.917109] rk_serial.0: ttyS0 at MMIO 0x10124000 (irq = 66) is a rk29_serial.0
+<6>[    2.064294] rk_serial rk_serial.0: membase 0xf70bc000
+<6>[    2.064361] rk_serial.3: ttyS3 at MMIO 0x20068000 (irq = 69) is a rk29_serial.3
+<6>[    2.224295] rk_serial rk_serial.3: membase 0xf70c0000
+<6>[    2.224475] Rockchip ion module(version: 1.0) is successfully loaded
+<6>[    2.225925] loop: module loaded
+<6>[    2.225979] Android kernel panic handler initialized (bind=kpanic)
+<6>[    3.254773] PPP generic driver version 2.4.2
+<6>[    3.254897] PPP Deflate Compression module registered
+<6>[    3.254926] PPP BSD Compression module registered
+<6>[    3.269198] PPP MPPE Compression module registered
+<6>[    3.269235] NET: Registered protocol family 24
+<6>[    3.269337] usbcore: registered new interface driver asix
+<6>[    3.269385] usbcore: registered new interface driver cdc_ether
+<6>[    3.269432] usbcore: registered new interface driver dm9620
+<6>[    3.269478] usbcore: registered new interface driver SR9700_android
+<6>[    3.269528] usbcore: registered new interface driver net1080
+<6>[    3.269574] usbcore: registered new interface driver cdc_subset
+<6>[    3.269620] usbcore: registered new interface driver zaurus
+<6>[    3.269658] cdc_ncm: 04-Aug-2011
+<6>[    3.269694] usbcore: registered new interface driver cdc_ncm
+<4>[    3.269724] Rockchip WiFi SYS interface (V1.00) ... 
+<6>[    3.269770] Initializing USB Mass Storage driver...
+<6>[    3.269822] usbcore: registered new interface driver usb-storage
+<6>[    3.269854] USB Mass Storage support registered.
+<6>[    3.269932] usbcore: registered new interface driver usbserial
+<6>[    3.269980] USB Serial support registered for generic
+<6>[    3.270027] usbcore: registered new interface driver usbserial_generic
+<6>[    3.270061] usbserial: USB Serial Driver core
+<6>[    3.270108] USB Serial support registered for GSM modem (1-port)
+<6>[    3.270163] usbcore: registered new interface driver option
+<6>[    3.270192] option: v0.7.2:USB Driver for GSM modems
+<6>[    3.270234] USB Serial support registered for usi-modem
+<6>[    3.270281] usbcore: registered new interface driver usi-modem
+<6>[    3.482112] DWC_OTG: ^^^^^^^^^^^^^^^^^Device Mode
+<6>[    3.484534] DWC_OTG: host20_driver_probe host2.0 reg addr: 0x101c0000 remap:0xf7200000
+<6>[    3.694956] DWC_OTG: ^^^^^^^^^^^^^^^^^^Host Mode
+<6>[    3.694995] usb20_host usb20_host: DWC OTG Controller
+<6>[    3.695129] usb20_host usb20_host: new USB bus registered, assigned bus number 1
+<6>[    3.695190] usb20_host usb20_host: irq 49, io mem 0x00000000
+<6>[    3.695259] DWC_OTG: Init: Port Power? op_state=1
+<6>[    3.695286] DWC_OTG: Init: Power Port (0)
+<6>[    3.695371] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+<6>[    3.695411] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+<6>[    3.695453] usb usb1: Product: DWC OTG Controller
+<6>[    3.695482] usb usb1: Manufacturer: Linux 3.0.36+ host20_hcd
+<6>[    3.695517] usb usb1: SerialNumber: usb20_host
+<6>[    3.695885] hub 1-0:1.0: USB hub found
+<6>[    3.695913] hub 1-0:1.0: 1 port detected
+<6>[    3.770738] android_usb gadget: Mass Storage Function, version: 2009/09/11
+<6>[    3.770778] android_usb gadget: Number of LUNs=2
+<6>[    3.770814]  lun0: LUN: removable file: (no medium)
+<6>[    3.770841]  lun1: LUN: removable file: (no medium)
+<6>[    3.771000] android_usb gadget: android_usb ready
+<6>[    3.771156] input: rk29-keypad as /devices/platform/rk29-keypad/input/input0
+<6>[    3.771346] usbcore: registered new interface driver xpad
+<6>[    3.771404] usbcore: registered new interface driver usb_acecad
+<6>[    3.771436] acecad: v3.2:USB Acecad Flair tablet driver
+<6>[    3.771484] usbcore: registered new interface driver aiptek
+<6>[    3.771514] aiptek: v2.3 (May 2, 2007):Aiptek HyperPen USB Tablet Driver (Linux 2.6.x)
+<6>[    3.771558] aiptek: Bryan W. Headley/Chris Atenasio/Cedric Brun/Rene van Paassen
+<6>[    3.771614] usbcore: registered new interface driver gtco
+<4>[    3.771644] GTCO usb driver version: 2.00.0006
+<6>[    3.771685] usbcore: registered new interface driver hanwang
+<6>[    3.771735] usbcore: registered new interface driver kbtab
+<6>[    3.771764] kbtab: v0.0.2:USB KB Gear JamStudio Tablet driver
+<6>[    3.771816] usbcore: registered new interface driver wacom
+<6>[    3.771847] wacom: v1.52:USB Wacom tablet driver
+<6>[    5.614416] input: ct36x_ts as /devices/platform/rk30_i2c.2/i2c-2/2-0001/input/input1
+<6>[    5.622308] ct36x_ts 2-0001: CT363 Successfully initialized
+<6>[    5.622557] input: lightsensor-level as /devices/virtual/input/input2
+<4>[    5.622697] lightsensor us5151 driver created !
+<4>[    5.622744] sensor_register_slave:mma8452,id=14
+<4>[    5.622769] sensor_register_slave:lis3dh,id=4
+<4>[    5.622795] sensor_register_slave:akm8963,id=20
+<4>[    5.622820] sensor_register_slave:l3g4200d,id=34
+<6>[    5.629769] using rtc device, rtc_hym8563, for alarms
+<6>[    5.629815] rtc_hym8563 1-0051: rtc core: registered rtc_hym8563 as rtc0
+<6>[    5.629873] i2c /dev entries driver
+<6>[    5.630257] lirc_dev: IR Remote Control driver registered, major 250 
+<6>[    5.630293] IR NEC protocol handler initialized
+<6>[    5.630319] IR RC5(x) protocol handler initialized
+<6>[    5.630346] IR RC6 protocol handler initialized
+<6>[    5.630370] IR JVC protocol handler initialized
+<6>[    5.630394] IR Sony protocol handler initialized
+<6>[    5.630419] IR RC5 (streamzap) protocol handler initialized
+<6>[    5.630448] IR LIRC bridge handler initialized
+<6>[    5.630472] Linux video capture interface: v2.00
+<4>[    5.630625] def_ref_volt: 1800mV, curr_ref_volt: 1800mV
+<4>[    5.630654] start_charge_logo_display
+<6>[    5.630683] RK29 Watchdog Timer, (c) 2011 Rockchip Electronics
+<6>[    5.630820] rk29-wdt rk29-wdt.0: starting watchdog timer
+<6>[    5.631102] device-mapper: uevent: version 1.0.3
+<6>[    5.631264] device-mapper: ioctl: 4.20.0-ioctl (2011-02-02) initialised: dm-devel@redhat.com
+<6>[    5.631368] Bluetooth: HCI UART driver ver 2.2
+<6>[    5.631396] Bluetooth: HCI H4 protocol initialized
+<6>[    5.631422] Bluetooth: HCILL protocol initialized
+<6>[    5.631479] cpuidle: using governor ladder
+<6>[    5.631502] cpuidle: using governor menu
+<6>[    5.676859] 
+<6>[    5.676862] drivers/mmc/core/core.c...1824..  ===== mmc_rescan Begin....[mmc0]
+<6>[    5.681923] rk29_sdmmc_change_clk_div..1961..  newDiv=80, newCLK=300Khz [sd_mmc]
+<6>[    5.682010] .Line3965..The End of SDMMC-probe Ver.5.05 The last modify date is 2013-05-08.  [sd_mmc]
+<6>[    5.682196] .Line3965..The End of SDMMC-probe Ver.5.05 The last modify date is 2013-05-08.  [sdio]
+<6>[    5.683276] usbcore: registered new interface driver usbhid
+<6>[    5.683307] usbhid: USB HID core driver
+<6>[    5.683525] logger: created 256K log 'log_main'
+<6>[    5.683595] logger: created 256K log 'log_events'
+<6>[    5.683660] logger: created 256K log 'log_radio'
+<6>[    5.683731] logger: created 256K log 'log_system'
+<4>[    5.683797] mt6622_probe.
+<6>[    5.683816] [MT6622] mt_bt_power_init
+<6>[    5.718546] 
+<6>[    5.718549] mmc_attach_sd..1219..  ===== Begin to identify card as SD-card. [mmc0]
+<6>[    5.865799] rk29_sdmmc_change_clk_div..1961..  newDiv=1, newCLK=24000Khz [sd_mmc]
+<6>[    5.865894] mmc0: new SDHC card at address e624
+<6>[    5.877861] mmcblk0: mmc0:e624 SU16G 14.8 GiB 
+<6>[    5.891326] 
+<6>[    5.891329] msdos_partition..461... ==== Begin to parse sdcard-partition.  [mmc0]
+<6>[    5.891401] msdos_partition..530... ==== The sdcard has MBR. [mmc0]
+<6>[    5.891436] msdos_partition..543... ==== partition-1, size=15556608KB  [mmc0]
+<6>[    5.891473] msdos_partition..571... ==== main partition-1....[mmc0]
+<6>[    5.891511]  mmcblk0: p1
+<6>[    5.891769] mmc_rescan_try_freq..1718..  ===== Initialize SD-card successfully. [mmc0]
+<6>[    5.891818] 
+<6>[    5.891821] drivers/mmc/core/core.c...1824..  ===== mmc_rescan Begin....[mmc1]
+<6>[    5.904290] rk29_sdmmc_change_clk_div..1961..  newDiv=40, newCLK=300Khz [sdio]
+<3>[    7.018713] RT5631 4-001a: dapm: unknown pin HP_L
+<3>[    7.018745] RT5631 4-001a: dapm: unknown pin HP_R
+<6>[    7.035171] asoc: RT5631 HiFi <-> rk29_i2s.1 mapping ok
+<6>[    7.035460] ALSA device list:
+<6>[    7.035480]   #0: RK29_RT5631
+<6>[    7.035585] GACT probability NOT on
+<6>[    7.035610] Mirror/redirect action on
+<6>[    7.035631] u32 classifier
+<6>[    7.035647]     Actions configured
+<6>[    7.035668] Netfilter messages via NETLINK v0.30.
+<6>[    7.035725] nf_conntrack version 0.5.0 (16384 buckets, 65536 max)
+<6>[    7.035994] ctnetlink v0.93: registering with nfnetlink.
+<6>[    7.036045] NF_TPROXY: Transparent proxy support initialized, version 4.1.0
+<6>[    7.036081] NF_TPROXY: Copyright (c) 2006-2007 BalaBit IT Ltd.
+<6>[    7.036320] xt_time: kernel timezone is -0000
+<6>[    7.036458] ip_tables: (C) 2000-2006 Netfilter Core Team
+<6>[    7.036581] arp_tables: (C) 2002 David S. Miller
+<6>[    7.036639] TCP cubic registered
+<6>[    7.036658] Initializing XFRM netlink socket
+<6>[    7.036976] NET: Registered protocol family 10
+<6>[    7.037476] Mobile IPv6
+<6>[    7.037510] ip6_tables: (C) 2000-2006 Netfilter Core Team
+<6>[    7.037614] IPv6 over IPv4 tunneling driver
+<6>[    7.038106] NET: Registered protocol family 17
+<6>[    7.038149] NET: Registered protocol family 15
+<6>[    7.058919] Bluetooth: RFCOMM TTY layer initialized
+<6>[    7.058953] Bluetooth: RFCOMM socket layer initialized
+<6>[    7.058982] Bluetooth: RFCOMM ver 1.11
+<6>[    7.059004] Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+<6>[    7.059034] Bluetooth: HIDP (Human Interface Emulation) ver 1.2
+<6>[    7.059154] NET: Registered protocol family 35
+<6>[    7.059285] [BT_RFKILL]: Enter rfkill_rk_init
+<6>[    7.059373] [BT_RFKILL]: Failed to get bt_default_reset gpio.
+<4>[    7.059411] rfkill_rk: probe of rfkill_rk failed with error -1
+<6>[    7.134475] VFP support v0.3: implementor 41 architecture 3 part 30 variant 9 rev 4
+<3>[    7.134534] rk_cam_cif(3055):rk3066b-camera version: v0.3.5  Zoom by ipp
+<5>[    7.134599] Registering SWP/SWPB emulation handler
+<6>[    7.135022] ddrfreq: verion 2.4 20130427
+<6>[    7.135048] ddrfreq: normal 396MHz video 300MHz dualview 0MHz idle 0MHz suspend 198MHz reboot 300MHz
+<6>[    7.136101] ddrfreq: change freq to 396 MHz when normal
+<4>[    7.136440] <<-GTP-INFO->> GTP driver install.
+<4>[    7.136548] <<-GTP-INFO->> GTP Driver Version:V1.4<2012/12/12>
+<4>[    7.136576] <<-GTP-INFO->> GTP Driver build@17:49:09,Aug 13 2013
+<4>[    7.136604] <<-GTP-INFO->> GTP I2C Address:0x5d
+<4>[    7.136628] <<-GTP-ERROR->> Failed to request GPIO:207, ERRNO:-16
+<4>[    7.136657] ------------[ cut here ]------------
+<4>[    7.136686] WARNING: at drivers/gpio/gpiolib.c:101 gpio_ensure_requested+0x54/0x1b0()
+<4>[    7.136722] autorequest GPIO-207
+<4>[    7.136750] [<c05373b0>] (unwind_backtrace+0x0/0xf8) from [<c0568700>] (warn_slowpath_common+0x4c/0x64)
+<4>[    7.136797] [<c0568700>] (warn_slowpath_common+0x4c/0x64) from [<c05687ac>] (warn_slowpath_fmt+0x30/0x40)
+<4>[    7.136845] [<c05687ac>] (warn_slowpath_fmt+0x30/0x40) from [<c0702188>] (gpio_ensure_requested+0x54/0x1b0)
+<4>[    7.136893] [<c0702188>] (gpio_ensure_requested+0x54/0x1b0) from [<c0702780>] (gpio_direction_input+0x90/0x190)
+<4>[    7.136944] [<c0702780>] (gpio_direction_input+0x90/0x190) from [<c0802334>] (goodix_ts_probe+0xd8/0x584)
+<4>[    7.136992] [<c0802334>] (goodix_ts_probe+0xd8/0x584) from [<c080f444>] (i2c_device_probe+0xc0/0xfc)
+<4>[    7.137037] [<c080f444>] (i2c_device_probe+0xc0/0xfc) from [<c073855c>] (driver_probe_device+0x90/0x1ac)
+<4>[    7.137101] [<c073855c>] (driver_probe_device+0x90/0x1ac) from [<c0738704>] (__driver_attach+0x8c/0x90)
+<4>[    7.137146] [<c0738704>] (__driver_attach+0x8c/0x90) from [<c0737768>] (bus_for_each_dev+0x5c/0x88)
+<4>[    7.137189] [<c0737768>] (bus_for_each_dev+0x5c/0x88) from [<c0737f34>] (bus_add_driver+0x180/0x254)
+<4>[    7.137234] [<c0737f34>] (bus_add_driver+0x180/0x254) from [<c0738bb0>] (driver_register+0x78/0x13c)
+<4>[    7.137278] [<c0738bb0>] (driver_register+0x78/0x13c) from [<c08119bc>] (i2c_register_driver+0x2c/0xb4)
+<4>[    7.137326] [<c08119bc>] (i2c_register_driver+0x2c/0xb4) from [<c052c6e8>] (do_one_initcall+0xfc/0x164)
+<4>[    7.137372] [<c052c6e8>] (do_one_initcall+0xfc/0x164) from [<c040893c>] (kernel_init+0x98/0x13c)
+<4>[    7.137415] [<c040893c>] (kernel_init+0x98/0x13c) from [<c0532a08>] (kernel_thread_exit+0x0/0x8)
+<4>[    7.137455] ---[ end trace e16871fa51641530 ]---
+<4>[    7.137502] <<-GTP-ERROR->> Failed to request GPIO:174, ERRNO:-16
+<4>[    7.137539] ------------[ cut here ]------------
+<4>[    7.137572] WARNING: at drivers/gpio/gpiolib.c:101 gpio_ensure_requested+0x54/0x1b0()
+<4>[    7.137606] autorequest GPIO-174
+<4>[    7.137628] [<c05373b0>] (unwind_backtrace+0x0/0xf8) from [<c0568700>] (warn_slowpath_common+0x4c/0x64)
+<4>[    7.137673] [<c0568700>] (warn_slowpath_common+0x4c/0x64) from [<c05687ac>] (warn_slowpath_fmt+0x30/0x40)
+<4>[    7.137719] [<c05687ac>] (warn_slowpath_fmt+0x30/0x40) from [<c0702188>] (gpio_ensure_requested+0x54/0x1b0)
+<4>[    7.137766] [<c0702188>] (gpio_ensure_requested+0x54/0x1b0) from [<c0702780>] (gpio_direction_input+0x90/0x190)
+<4>[    7.137814] [<c0702780>] (gpio_direction_input+0x90/0x190) from [<c08026d8>] (goodix_ts_probe+0x47c/0x584)
+<4>[    7.137860] [<c08026d8>] (goodix_ts_probe+0x47c/0x584) from [<c080f444>] (i2c_device_probe+0xc0/0xfc)
+<4>[    7.137904] [<c080f444>] (i2c_device_probe+0xc0/0xfc) from [<c073855c>] (driver_probe_device+0x90/0x1ac)
+<4>[    7.137950] [<c073855c>] (driver_probe_device+0x90/0x1ac) from [<c0738704>] (__driver_attach+0x8c/0x90)
+<4>[    7.137994] [<c0738704>] (__driver_attach+0x8c/0x90) from [<c0737768>] (bus_for_each_dev+0x5c/0x88)
+<4>[    7.138038] [<c0737768>] (bus_for_each_dev+0x5c/0x88) from [<c0737f34>] (bus_add_driver+0x180/0x254)
+<4>[    7.138082] [<c0737f34>] (bus_add_driver+0x180/0x254) from [<c0738bb0>] (driver_register+0x78/0x13c)
+<4>[    7.138126] [<c0738bb0>] (driver_register+0x78/0x13c) from [<c08119bc>] (i2c_register_driver+0x2c/0xb4)
+<4>[    7.138172] [<c08119bc>] (i2c_register_driver+0x2c/0xb4) from [<c052c6e8>] (do_one_initcall+0xfc/0x164)
+<4>[    7.138217] [<c052c6e8>] (do_one_initcall+0xfc/0x164) from [<c040893c>] (kernel_init+0x98/0x13c)
+<4>[    7.138259] [<c040893c>] (kernel_init+0x98/0x13c) from [<c0532a08>] (kernel_thread_exit+0x0/0x8)
+<4>[    7.138298] ---[ end trace e16871fa51641531 ]---
+<4>[    7.264288] <<-GTP-ERROR->> GTP request IO port failed.
+<4>[    7.264352] Goodix-TS: probe of 2-005d failed with error -16
+<6>[    7.264427] i2c i2c-0: sensor_probe: gs_mma8452,0xefe1a200
+<3>[    7.264690] i2c i2c-0: No ack, Maybe slave(addr: 0x1d) not exist or abnormal power-on, retry 2...
+<3>[    7.264961] i2c i2c-0: No ack, Maybe slave(addr: 0x1d) not exist or abnormal power-on, retry 1...
+<3>[    7.265232] i2c i2c-0: No ack, Maybe slave(addr: 0x1d) not exist or abnormal power-on, retry 0...
+<3>[    7.265503] i2c i2c-0: No ack, Maybe slave(addr: 0x1d) not exist or abnormal power-on, retry 2...
+<3>[    7.265773] i2c i2c-0: No ack, Maybe slave(addr: 0x1d) not exist or abnormal power-on, retry 1...
+<3>[    7.266042] i2c i2c-0: No ack, Maybe slave(addr: 0x1d) not exist or abnormal power-on, retry 0...
+<3>[    7.266312] i2c i2c-0: No ack, Maybe slave(addr: 0x1d) not exist or abnormal power-on, retry 2...
+<3>[    7.266582] i2c i2c-0: No ack, Maybe slave(addr: 0x1d) not exist or abnormal power-on, retry 1...
+<3>[    7.266852] i2c i2c-0: No ack, Maybe slave(addr: 0x1d) not exist or abnormal power-on, retry 0...
+<4>[    7.266896] sensor_chip_init:fail to read gs_mma8452 devid:0xff
+<3>[    7.266926] i2c i2c-0: sensor_probe failed -11
+<3>[    7.266931] 
+<4>[    7.266959] sensors: probe of 0-001d failed with error -11
+<6>[    7.266995] i2c i2c-0: sensor_probe: gs_lis3dh,0xefe1a400
+<4>[    7.267254] sensor_chip_init:gs_lis3dh:devid=0x33,ops=0xc0c10774
+<6>[    7.269532] input: gsensor as /devices/platform/rk30_i2c.0/i2c-0/0-0019/input/input3
+<4>[    7.269747] sensor_irq_init:use irq=175
+<4>[    7.269846] sensor_misc_device_register:miscdevice: mma8452_daemon
+<4>[    7.269878] sensor_probe:initialized ok,sensor name:lis3dh,type:1,id=4
+<4>[    7.269885] 
+<6>[    7.269929] i2c i2c-0: sensor_probe: ak8963,0xefe1a600
+<4>[    7.270192] sensor_chip_init:ak8963:devid=0x48,ops=0xc0c107d0
+<6>[    7.270768] input: compass as /devices/platform/rk30_i2c.0/i2c-0/0-000d/input/input4
+<4>[    7.270918] sensor_irq_init:use irq=287
+<4>[    7.271012] sensor_misc_device_register:miscdevice: compass
+<4>[    7.271042] sensor_probe:initialized ok,sensor name:akm8963,type:2,id=20
+<4>[    7.271049] 
+<6>[    7.271095] i2c i2c-0: sensor_probe: l3g4200d_gryo,0xefe1a800
+<4>[    7.271361] sensor_chip_init:l3g4200d_gryo:devid=0xd3,ops=0xc0c108b8
+<6>[    7.273165] input: gyro as /devices/platform/rk30_i2c.0/i2c-0/0-0069/input/input5
+<4>[    7.273315] sensor_irq_init:use irq=172
+<4>[    7.273397] sensor_misc_device_register:miscdevice: gyrosensor
+<4>[    7.273427] sensor_probe:initialized ok,sensor name:l3g4200d,type:3,id=34
+<4>[    7.273435] 
+<6>[    7.273496] sensor_init: Probe name sensors
+<4>[    7.273530] sensor-dev.c v1.3 add sensor debug support 2013-3-15
+<6>[    7.274591] rtc_hym8563 1-0051: setting system clock to 2013-10-25 11:12:36 UTC (1382699556)
+<4>[    7.274644] ******************* WARNING ********************
+<4>[    7.274673] i2c i2c-4: rk610 is exist, clients:
+<4>[    7.274696] client: rk610_ctl, addr: 0x40
+<4>[    7.274717] client: rt5631, addr: 0x1a
+<4>[    7.274736] ************************************************
+<6>[    7.283610] asoc: rk-hdmi-i2s-hifi <-> rk29_i2s.1 mapping ok
+<6>[    7.284031] Freeing init memory: 1168K
+<3>[    7.290187] init: /init.rc: 412: invalid option 'disable'
+<4>[    7.291341] init (1): /proc/1/oom_adj is deprecated, please use /proc/1/oom_score_adj instead.
+<6>[    7.322868] keychord: using input dev rk29-keypad for fevent
+<4>[    7.587208] gp_rknand_info = : 0xeeced000
+<4>[    7.587274] rk30_chip_set:1 
+<4>[    7.587315] request IRQ_NANDC irq , ret=0.........
+<4>[    7.587347] FTL INFO:Version = 438,Date = 20130620
+<4>[    7.587411] FlashCopyProgBuf1=0xc1589000
+<4>[    7.587451] ATime: 40 ns AHB: 140 timming: 1081
+<4>[    7.587478] No.1 FLASH INFO:89 d7 94 3e 84
+<4>[    7.587502] No.2 FLASH INFO:89 d7 94 3e 84
+<4>[    7.587526] No.3 FLASH INFO:89 d7 94 3e 84
+<4>[    7.587549] No.4 FLASH INFO:89 d7 94 3e 84
+<4>[    7.588033] ATime: 32 ns AHB: 140 timming: 1061
+<4>[    7.588197] ATime: 32 ns AHB: 140 timming: 1061
+<4>[    7.588219] randomizer = 2 , EccBits = 18 pSpec->pReadRetrial = 0
+<4>[    7.588602] FlashReadPage error!!,row = 3000
+<4>[    7.588623] data:d3 66 27 91 8f c7 42 21 9d 8f ba c2 37 df 89 5a
+<4>[    7.588650] spare:ae 6e
+<4>[    7.588663] NAND INFO DUMP....ZYF
+<4>[    7.588679] AHB CLK: 96000
+<4>[    7.588693] FMCTL: 0x300 ; FMWAIT: 0x1061
+<4>[    7.588712] FLCTL: 0x100428 ; BCHCTL: 0x10 ; MTRANS_CFG: 0x1d0
+<4>[    7.588739] MTRANS_SADDR0: 0x0 ; MTRANS_SADDR1: 0x0
+<4>[    7.588762] MTRANS_STAT: 0x0 ; RANDMZ_CFG: 0xc000576a
+<4>[    7.588785] BCHST[0]: 0x400e007 
+<4>[    7.588801] BCHST[1]: 0x7 
+<4>[    7.588815] BCHST[2]: 0x0 
+<4>[    7.588828] BCHST[3]: 0x0 
+<4>[    7.588841] BCHST[4]: 0x0 
+<4>[    7.588855] BCHST[5]: 0x0 
+<4>[    7.588869] BCHST[6]: 0x0 
+<4>[    7.588883] BCHST[7]: 0x0 
+<4>[    7.588942] [<c05373b0>] (unwind_backtrace+0x0/0xf8) from [<bf007b28>] (FlashReadErrorDump+0xb0/0xe4 [rk30xxnand_ko])
+<4>[    7.589029] [<bf007b28>] (FlashReadErrorDump+0xb0/0xe4 [rk30xxnand_ko]) from [<bf009280>] (FlashReadEnhanced+0x25c/0x270 [rk30xxnand_ko])
+<4>[    7.589120] [<bf009280>] (FlashReadEnhanced+0x25c/0x270 [rk30xxnand_ko]) from [<bf00d3e0>] (GetBadBlkTbl+0x154/0x480 [rk30xxnand_ko])
+<4>[    7.589211] [<bf00d3e0>] (GetBadBlkTbl+0x154/0x480 [rk30xxnand_ko]) from [<bf013788>] (FtlInit+0xc0/0x16c [rk30xxnand_ko])
+<4>[    7.589298] [<bf013788>] (FtlInit+0xc0/0x16c [rk30xxnand_ko]) from [<bf016600>] (NandInit+0x19c/0x2f8 [rk30xxnand_ko])
+<4>[    7.589379] [<bf016600>] (NandInit+0x19c/0x2f8 [rk30xxnand_ko]) from [<bf0167d0>] (rk29nand_probe+0x74/0x224 [rk30xxnand_ko])
+<4>[    7.589449] [<bf0167d0>] (rk29nand_probe+0x74/0x224 [rk30xxnand_ko]) from [<c052c6e8>] (do_one_initcall+0xfc/0x164)
+<4>[    7.589503] [<c052c6e8>] (do_one_initcall+0xfc/0x164) from [<c059d02c>] (sys_init_module+0xcd0/0x1a68)
+<4>[    7.589550] [<c059d02c>] (sys_init_module+0xcd0/0x1a68) from [<c0531fc0>] (ret_fast_syscall+0x0/0x30)
+<4>[    7.589592] ATime: 38 ns AHB: 140 timming: 1081
+<4>[    7.589947] FlashReadPage error!!,row = 3000
+<4>[    7.589968] data:d3 66 27 91 8f c7 42 21 9d 8f ba c2 37 df 89 5a
+<4>[    7.589995] spare:ae 6e
+<4>[    7.590010] ATime: 44 ns AHB: 140 timming: 1082
+<4>[    7.590399] FlashReadPage error!!,row = 3000
+<4>[    7.590419] data:d3 66 27 91 8f c7 42 21 9d 8f ba c2 37 df 89 5a
+<4>[    7.590446] spare:ae 6e
+<4>[    7.590460] ATime: 32 ns AHB: 140 timming: 1061
+<4>[    7.617617] GetRemapTbl...Probe ov5640_back success
+<4>[    9.544295] Probe ov2659_front success
+<3>[   10.134422] i2c i2c-3: 1 i2c clients have been registered at 0x3cProbe ov5640_back_3 success
+<3>[   11.384420] i2c i2c-3: 1 i2c clients have been registered at 0x30
+<6>[   11.724291] DWC_OTG: dwc_otg_hcd_enable, disable host controller
+<4>[   11.954295] Probe ov2659_front_4 success
+<4>[   12.360223] done
+<4>[   12.361281] totalLogicBlkRaw  = 15842
+<4>[   12.361307] gBootMedia = 1 gSdmmcFwPartOffset =0!
+<4>[   12.361330] rknand_buffer.c version: 4.38 20121130!
+<5>[   12.362107] 10 cmdlinepart partitions found on MTD device rk29xxnand
+<5>[   12.362139] Creating 10 MTD partitions on "rk29xxnand":
+<5>[   12.362173] 0x000000400000-0x000000800000 : "misc"
+<5>[   12.392029] 0x000000800000-0x000001400000 : "kernel"
+<5>[   12.397362] 0x000001400000-0x000002400000 : "boot"
+<5>[   12.402495] 0x000002400000-0x000004400000 : "recovery"
+<5>[   12.407970] 0x000004400000-0x000008400000 : "backup"
+<5>[   12.413282] 0x000008400000-0x000010400000 : "cache"
+<5>[   12.418516] 0x000010400000-0x000110400000 : "userdata"
+<5>[   12.424011] 0x000110400000-0x000110800000 : "kpanic"
+<6>[   12.429556] apanic: Bound to mtd partition 'kpanic'
+<6>[   12.429583] apanic: No panic data available
+<5>[   12.429718] 0x000110800000-0x000135c00000 : "system"
+<5>[   12.443920] 0x000135c00000-0x0003de200000 : "user"
+<4>[   12.450280] startBlk = 144  sysProtAddr = 143 
+<6>[   12.477201] EXT4-fs (mtdblock8): mounted filesystem with ordered data mode. Opts: noauto_da_alloc
+<6>[   12.509742] EXT4-fs (mtdblock6): mounted filesystem with ordered data mode. Opts: noauto_da_alloc
+<6>[   13.125574] EXT4-fs (mtdblock5): mounted filesystem with ordered data mode. Opts: noauto_da_alloc
+<4>[   13.142782] UMP: Using OS memory backend, allocation limit: 1073741824
+<4>[   13.142854] UMP: UMP device driver  loaded
+<4>[   13.171348] Mali: Mali400 inside of rk3188!
+<4>[   13.171396] Mali: mali freq table num : 6 
+<4>[   13.171436] Mali: mali freq table :Mali: 128,Mali: 198,Mali: 256,Mali: 297,Mali: 384,Mali: 594,Mali: 
+<4>[   13.171531] Mali: init mali clock success 
+<4>[   13.177420] Mali: @@@@@@@Mali device driver loaded success@@@@@@@@
+<4>[   13.181803] mirroring: Unknown symbol video_data_to_mirroring (err 0)
+<4>[   13.181862] mirroring: Unknown symbol audio_data_to_mirroring (err 0)
+<4>[   13.184701] rk29_ipp: module is from the staging directory, the quality is unknown, you have been warned.
+<4>[   13.185522] ipp irq 47
+<4>[   13.185781] IPP init, version rk30-ipp 1.003
+<3>[   13.269319] init: cannot find '/system/vendor/bin/pvrsrvctl', disabling 'pvrsrvctl'
+<3>[   13.283988] init: cannot find '/system/etc/install-recovery.sh', disabling 'flash_recovery'
+<3>[   13.627266] init: cannot find '/system/bin/bplus_helper', disabling 'bplus_helper'
+<3>[   13.811517] VPU_SERVICE: failed on clk_get pd_video
+<4>[   13.811588] vpu: power on
+<6>[   13.811641] VPU_SERVICE: checking hw id 4831
+<4>[   13.812204] vpu: power off...done
+<6>[   13.812241] VPU_SERVICE: init success
+<6>[   13.831210] rk_serial rk_serial.0: serial_rk_init_dma_rx sucess
+<6>[   13.831500] rk_serial rk_serial.0: serial_rk_init_dma_rx sucess
+<6>[   13.831611] rk_serial rk_serial.0: serial_rk_init_dma_rx sucess
+<3>[   13.850411] init: property 'ro.serialno' doesn't exist while expanding '${ro.serialno}'
+<3>[   13.850457] init: cannot expand '${ro.serialno}' while writing to '/sys/class/android_usb/android0/iSerial'
+<3>[   13.850734] init: using deprecated syntax for specifying property 'ro.product.usbfactory', use ${name} instead
+<3>[   13.945030] android_usb: already disabled
+<3>[   13.945232] android_usb: already disabled
+<6>[   13.954008] adb_open
+<6>[   14.088362] EXT4-fs (mtdblock8): re-mounted. Opts: barrier=1,data=ordered,noauto_da_alloc
+<4>[   14.176303] [rknand_sys_storage_ioctl:90] rknand_sys_storage_ioctl in
+<4>[   14.176340] [rknand_sys_storage_ioctl:103] RKNAND_GET_DRM_KEY
+<4>[   14.176385] [rknand_sys_storage_ioctl:365] return ret = 0
+<6>[   14.262236] .428.. MMC0 receive the message sd-No-Media from VOLD.[sd_mmc]
+<6>[   14.262292] .459.. MMC0 receive the message No-Media from VOLD. waitTimes=0 [sd_mmc]
+<6>[   14.552011] .428.. MMC0 receive the message sd-Pending from VOLD.[sd_mmc]
+<6>[   14.552267] .428.. MMC0 receive the message sd-Idle-Unmounted from VOLD.[sd_mmc]
+<6>[   14.599456] EXT4-fs (mtdblock8): re-mounted. Opts: noauto_da_alloc,barrier=0
+<6>[   14.764887] EXT4-fs (mtdblock6): re-mounted. Opts: noauto_da_alloc,barrier=0
+<6>[   14.776140] EXT4-fs (mtdblock5): re-mounted. Opts: noauto_da_alloc,barrier=0
+<4>[   15.526229] Loading Chuwi V88 HUB access mod
+<4>[   15.526256] Greetings from crewrktablets ;)
+<4>[   15.526292] HUBaccess mod addres check failed [0a 50 42 e2]
+<4>[   15.938104] rk fb use 3 buffers
+<6>[   15.948779] lcdc1 win1 open,atv layer:2
+<6>[   15.948808] lcdc1 win1 closed,atv layer:1
+<3>[   16.205356] ov5640 sensor_ioctl cmd(0x3) is unknown !
+<6>[   16.217675] rk30-lcdc rk30-lcdc.1: blank mode:0
+<3>[   16.314398] ov2659 sensor_ioctl cmd(0x3) is unknown !
+<6>[   16.448980] tun: Universal TUN/TAP device driver, 1.6
+<6>[   16.449045] tun: (C) 1999-2004 Max Krasnyansky <maxk@qualcomm.com>
+<6>[   16.476060] TCP veno registered
+<6>[   16.496685] usbcore: registered new interface driver dm9601
+<6>[   16.521849] usbcore: registered new interface driver MOSCHIP usb-ethernet driver
+<6>[   16.535054] rtl8150: v0.6.2 (2004/08/27):rtl8150 based usb-ethernet driver
+<6>[   16.535264] usbcore: registered new interface driver rtl8150
+<6>[   17.286424] usbcore: registered new interface driver snd-usb-audio
+<6>[   17.338080] USB Serial support registered for cp210x
+<6>[   17.338313] usbcore: registered new interface driver cp210x
+<6>[   17.338345] cp210x: v0.09:Silicon Labs CP210x RS232 serial adaptor driver
+<6>[   17.350743] USB Serial support registered for pl2303
+<6>[   17.350991] usbcore: registered new interface driver pl2303
+<6>[   17.351021] pl2303: Prolific PL2303 USB to serial adaptor driver
+<6>[   17.374663] USB Serial support registered for FTDI USB Serial Device
+<6>[   17.374941] usbcore: registered new interface driver ftdi_sio
+<6>[   17.374971] ftdi_sio: v1.6.0:USB FTDI Serial Converters Driver
+<6>[   17.409586] usbcore: registered new interface driver cdc_acm
+<6>[   17.409643] cdc_acm: USB Abstract Control Model driver for USB modems and ISDN adapters
+<6>[   19.514303] DWC_OTG: ********vbus detect*********************************************
+<6>[   19.707523] DWC_OTG: ********soft connect!!!*****************************************
+<6>[   19.713532] DWC_OTG: USB SUSPEND
+<6>[   20.054052] DWC_OTG: USB RESET
+<6>[   20.126483] android_work: sent uevent USB_STATE=CONNECTED
+<6>[   20.129895] DWC_OTG: USB RESET
+<6>[   20.219677] android_usb gadget: high speed config #1: android
+<6>[   20.219903] android_work: sent uevent USB_STATE=CONFIGURED
+<6>[   23.660403] warning: `zygote' uses 32-bit capabilities (legacy support in use)
+<6>[   88.151440] request_suspend_state: wakeup (3->0) at 88107157386 (2013-10-25 11:13:57.358394760 UTC)
+<6>[   88.618730] EXT4-fs (dm-0): mounted filesystem without journal. Opts: (null)
+<4>[   88.686364] initRssiHistory.
+<4>[   88.689303] =======================================================
+<4>[   88.695627] ==== Launching Wi-Fi driver! (Powered by Rockchip) ====
+<4>[   88.701951] =======================================================
+<4>[   88.708280] MT5931 SDIO WiFi driver (Powered by Rockchip,Ver 3.04) init.
+<4>[   88.715048] ## Calling platform_driver_register
+<4>[   88.719699] ## wifi_probe
+<4>[   88.722447] wifi_set_power = 1
+<6>[   88.725540] rk29sdk_wifi_power: 1
+<6>[   88.757886] EXT4-fs (dm-0): re-mounted. Opts: (null)
+<6>[   88.777552] EXT4-fs (dm-0): re-mounted. Opts: (null)
+<6>[   88.845166] EXT4-fs (dm-1): mounted filesystem without journal. Opts: (null)
+<6>[   88.867448] EXT4-fs (dm-1): re-mounted. Opts: (null)
+<6>[   88.873881] EXT4-fs (dm-1): re-mounted. Opts: (null)
+<6>[   88.943539] EXT4-fs (dm-2): mounted filesystem without journal. Opts: (null)
+<6>[   88.997675] EXT4-fs (dm-2): re-mounted. Opts: (null)
+<6>[   89.003596] EXT4-fs (dm-2): re-mounted. Opts: (null)
+<6>[   89.027972] wifi turn on power
+<4>[   89.084335] wifi_set_carddetect = 1
+<6>[   89.084367] rk29sdk_wifi_set_carddetect:1
+<6>[   89.084424] mmc1: slot status change detected(0-1)
+<4>[   89.084985] wl_android_wifictrl_func_add success.
+<6>[   89.284355] 
+<6>[   89.284360] drivers/mmc/core/core.c...1824..  ===== mmc_rescan Begin....[mmc1]
+<6>[   89.329441] 
+<6>[   89.329447] mmc_attach_sdio..808..  ===== Begin to identify card as SDIO-card. [mmc1]
+<6>[   89.358985] rk29_sdmmc_change_clk_div..1961..  newDiv=0, newCLK=24000Khz [sdio]
+<6>[   89.359890] mmc1: new high speed SDIO card at address 0001
+<6>[   89.753485] acc_open
+<6>[   89.753514] acc_release
+<6>[   89.918936] mmc_rescan_try_freq..1675..  ===== Initialize SDIO successfully. [mmc1]
+<4>[   89.991219] Current WiFi chip is MT5931.
+<6>[   90.002832] .428.. MMC0 receive the message sd-Checking from VOLD.[sd_mmc]
+<4>[   90.004887] p2p Launch
+<4>[   90.004924] glRegisterP2P
+<4>[   90.005162] Launch success, fgIsP2PRegistered TRUE.
+<6>[   90.025606] .428.. MMC0 receive the message sd-Mounted from VOLD.[sd_mmc]
+<6>[   91.615005] ADDRCONF(NETDEV_UP): wlan0: link is not ready
+<4>[   92.149228] --> mtk_cfg80211_testmode_cmd()
+<4>[   92.149315] --> mtk_cfg80211_testmode_sw_cmd()
+<4>[   92.149948] --> mtk_cfg80211_testmode_cmd()
+<4>[   92.150021] --> mtk_cfg80211_testmode_sw_cmd()
+<4>[   92.150460] --> mtk_cfg80211_testmode_cmd()
+<4>[   92.150547] --> mtk_cfg80211_testmode_sw_cmd()
+<4>[   92.151090] --> mtk_cfg80211_testmode_cmd()
+<4>[   92.151149] --> mtk_cfg80211_testmode_sw_cmd()
+<4>[   92.151630] --> mtk_cfg80211_testmode_cmd()
+<4>[   92.151688] --> mtk_cfg80211_testmode_sw_cmd()
+<4>[   92.152085] --> mtk_cfg80211_testmode_cmd()
+<4>[   92.152159] --> mtk_cfg80211_testmode_sw_cmd()
+<4>[   92.320844] initRssiHistory.
+<6>[   92.333592] ADDRCONF(NETDEV_CHANGE): wlan0: link becomes ready
+<6>[   94.439163] qtaguid: ctrl_counterset(s 1 10076): insufficient priv from pid=485 tgid=421 uid=1000
+<7>[  102.574310] wlan0: no IPv6 routers present
+<7>[  102.734313] p2p0: no IPv6 routers present
+<3>[  104.214757] init: untracked pid 700 exited
+<6>[  110.466267] rk30-lcdc rk30-lcdc.1: blank mode:4
+<6>[  110.467937] request_suspend_state: sleep (0->3) at 110423651888 (2013-10-25 11:14:20.208414252 UTC)
+<4>[  110.479896] Light Sensor us5151 enter suspend us5151->status 0
+<6>[  110.486160] *********wlanP2P_early_suspend************
+<6>[  110.491379] *********p2pEarlySuspend************
+<6>[  110.496065] ip is not avaliable.
+<4>[  110.549992] rk3188 lcdc1 clk disable...
+<6>[  110.550061] ddrfreq: change auto self refresh to 1 when suspend
+<6>[  110.550779] ddrfreq: change freq to 198 MHz when suspend
+<6>[  112.449662] qtaguid: ctrl_counterset(s 0 10076): insufficient priv from pid=485 tgid=421 uid=1000
+<3>[  115.114273] init: untracked pid 1034 exited
+<3>[  130.156541] init: untracked pid 702 exited
+<3>[  135.196285] init: untracked pid 1305 exited
+<3>[  139.062858] init: untracked pid 1556 exited
+<3>[  149.141549] init: untracked pid 1873 exited
+<3>[  154.120990] init: untracked pid 2140 exited
